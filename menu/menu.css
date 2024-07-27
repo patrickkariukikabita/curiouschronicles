@@ -1,0 +1,154 @@
+/* on large devices */
+@media (min-width: 768px) {
+  .colcard {
+      width: calc(50% - 5px);
+      margin-left: 5px;
+  }
+  /* margin for menu */
+  .menumargin{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+.menuFont {
+  font-family: Georgia, Times, serif;
+   font-size: 20px; 
+  }
+
+/* on small devices */
+  @media (max-width: 767px) {
+    .colcard {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .menuFont {
+      font-family: Georgia, Times, serif;
+      font-size: 15px;
+    }
+  }
+ 
+ 
+  /* Custom style to put the dropdown on top of other elements */
+.dropdown-container {
+  position: relative;
+  z-index: 8888 !important;
+}
+
+
+  .ellipsized-div {
+width: 200px; /* Set the desired width of the div */
+white-space: nowrap; /* Prevent line breaks */
+overflow: hidden; /* Hide overflowing content */
+text-overflow: ellipsis; /* Display an ellipsis (...) for truncated text */
+}
+a{
+text-decoration: none;
+}
+
+.headingFont {
+font-family: Georgia, Times, serif;
+ font-size: 22px; 
+}
+
+.bodyFont {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px; /* Adjust the font size as needed */
+}
+
+.articleFont {
+  line-height: 1.5;
+    font: 16px/1.5 "TitilliumRegular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #494949;
+  
+  
+}
+
+ p {
+  margin-bottom: 2em;
+}
+
+
+.custom-gray {
+  background-color: #f0f0ed;
+}
+.custom-orange{
+background-color: #d24d33;
+}
+
+.text-orange {
+    color:  #d24d33;
+  }
+.bg-colorfish {
+  background-color:#3b8dbd;
+}
+
+.bg-maroon{
+  background-color:#d24d33;
+}
+ /* 404 Page Styles */
+    .error-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .error-page .error-code {
+      font-size: 10rem;
+      font-weight: bold;
+      color: #d24d33;
+    }
+    .error-page .error-message {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+
+    /* handling dropdown items hover */
+    .hoverchange:hover {
+      background-color: #68666641;
+    }
+/* handling authorHome */
+.newarticlediv {
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.newarticlediv:hover {
+  background-color: #f9f9f9;
+}
+.form-check-input.custom-switch:focus {
+box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); 
+}
+
+/* handling authorLogin and signup */
+.email,.password,.full_name,.showPasswordBtn,.googlesignupbtn,.loginbtn,.googlesigninbtn,.signupbtn ,.modalsearchinput{
+  height: 50px;
+}
+.labels {
+  font-size: 20px;
+}
+
+/* handling authorEditor */
+.form-switch{
+  height: 40px;
+}
+.form-switch >.toggle-btn{
+  height: 34px;
+  width: 60px;
+}
+
+
+#category {
+  background-color: #f0f0ed !important;
+}
+.btn-outline-text-light:hover,
+.btn-outline-text-light:hover .icons {
+  color: white !important;
+}
+
