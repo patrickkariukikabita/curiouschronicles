@@ -1,4 +1,4 @@
-```markdown
+
 # PHP, MySQL, JQuery and TinyMCE Blogging Website
 Welcome to my blog application
 
@@ -147,4 +147,3 @@ Here is a screenshot of the application:
 - [www.bytemast.com](https://bytemast.com)
 
 Feel free to explore the project and provide feedback or suggestions.
-```
