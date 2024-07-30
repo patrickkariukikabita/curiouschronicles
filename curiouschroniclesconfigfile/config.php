@@ -1,6 +1,6 @@
 <?php
-$sitename = '[your website name]';
-$founderName="[Founder name]";
+$sitename = 'Sociolme';
+$founderName="Patrick Kariuki";
 $searchLimit=6;
 
 error_reporting(E_ALL);
@@ -14,18 +14,18 @@ require __DIR__.'/PHPMailer/src/SMTP.php';
 
 
 // Handling email
-// Handling sending gmail-- if on cpanel 
-define('GUSER', '[cpanelfromemail]');
-define('GPWD', '[yourpassword]');
-define('HOST', '[yourhostingmailserver]');
-define('FROM', '[Yourcpanelemail]');
+define('GUSER', 'noreply@sociolme.com');
+define('GPWD', '8A2PYwfQW7WQejN');
+define('HOST', 'mail.sociolme.com');
+define('FROM', 'noreply@sociolme.com');
+define('FROMNAME', $sitename);
 define('PORT',587);
 
 // handling sign in with google
 // Google API configuration
-define('GOOGLE_CLIENT_ID', '[GOOGLE CLIENT ID]');
-define('GOOGLE_CLIENT_SECRET', '[GOOGLE CLIENT SECRET]');
-define('GOOGLE_REDIRECT_URL', 'https://[yourdomainname]/author/authorGoogleWaiting.php');
+define('GOOGLE_CLIENT_ID', '406634251921-ala2u6h8eg7irj5frdvsrha9lf2quani.apps.googleusercontent.com');
+define('GOOGLE_CLIENT_SECRET', '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');
+define('GOOGLE_REDIRECT_URL', 'https://www.sociolme.com/author/authorGoogleWaiting.php');
 
 // Include Google API client library
 require_once 'google-api-php-client/vendor/autoload.php';
@@ -33,7 +33,7 @@ require_once 'google-api-php-client/vendor/autoload.php';
 // create Client Request to access Google API
 
 $client = new Google_Client();
-$client->setApplicationName('[doainname]');
+$client->setApplicationName('sociolme.com');
 $client->setClientId(GOOGLE_CLIENT_ID);
 $client->setClientSecret(GOOGLE_CLIENT_SECRET);
 $client->setRedirectUri(GOOGLE_REDIRECT_URL);
@@ -50,8 +50,8 @@ class DatabaseConnection {
         // Create a new PDO instance
        // Create a new PDO instance
        $servername = "localhost:3306";
-       $username = "[database username]";
-       $password = "[database password]";
+       $username = "root";
+       $password = "";
        $dbname = "curiouschronicles";
         try {
             // Create a new PDO instance if a connection doesn't exist or connection is lost
