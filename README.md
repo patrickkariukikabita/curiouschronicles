@@ -137,9 +137,11 @@ Enjoy your new blogging website! If you encounter any issues or have questions, 
 ### Screenshots
 
 Here is a screenshot of the application:
-
+## The Homepage
 ![Homepage](resources/home.png)
+## Categories Section
 ![Categories](resources/category.png)
+## Author Login Section
 ![Author Login](resources/author_login.png)
 
 ## Visit My Site
