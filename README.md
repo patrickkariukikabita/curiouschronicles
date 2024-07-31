@@ -91,6 +91,12 @@ private function __construct() {
     // ...other code
 }
 ```
+in ```newArticle.php``` in the ```articles``` directory modify this script to add your tinymceToken
+
+```html
+  <script src="https://cdn.tiny.cloud/1/[Your tinymce token]/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
+```
 
 7. **Dependencies**
 
